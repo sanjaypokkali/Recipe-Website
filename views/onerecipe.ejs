@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid centered">
+        <h1 class="display-4"> <%= recipeTitle %></h1>
+        <hr class="my-4">
+        <h3 style="text-align: left;">Description:</h3>
+        <p style="text-align: left;"><%= recipeDesc %></p>
+        <hr class="my-1">
+        <h3 style="text-align: left;">Ingredients:</h3>
+        <ul style="text-align: left;">
+        <% recipeIngredients.forEach(function(ingredient) { %>
+             <li><%= ingredient %></li>
+       <% }); %>
+    </ul>
+    <hr class="my-1">
+    <h3 style="text-align: left;">Steps:</h3>
+        <ol style="text-align: left;">
+            <% recipeSteps.forEach(function(step) { %>
+              <li><%= step %></li>
+            <% }); %>
+        </ol>
+
+    </div>
+</div>
+
+<%- include('partials/footer') %>

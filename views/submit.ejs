@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron jumbotron-fluid centered">
+    <i class="fas fa-pizza-slice fa-9x"></i>
+    <h1 class="display-4">Recipe</h1>
+    <p class="secret-text">Share your recipes to the world!</p>
+
+    <form action="/submit" enctype="multipart/form-data" method="POST">
+
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="title" placeholder="Recipe Name">
+        <input type="text" class="form-control text-center" name="description" placeholder="Description">
+        <textarea type="text" class="form-control text-center" name="ingredients" placeholder="Ingredient" rows="5"></textarea>
+        <textarea type="text" class="form-control text-center" name="steps" placeholder="Steps" rows="5"></textarea>
+        Image:  <input type="file" name="image" placeholder="Image">
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+  </div>
+</div>
+<%- include('partials/footer') %>

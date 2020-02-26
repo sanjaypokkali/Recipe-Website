@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<div class="container">
+    <div class="container mt-3">
+        <div class="row">
+            <div class="card-deck">
+                <% recipes.forEach(function(recipe) { %>
+                    <div class="card mb-4" style="min-width: 18rem; max-width: 18rem;">
+                        <img src="<%= recipe.image %>" class="card-img-top" width="300" height="215">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= recipe.title %></h5>
+                            <p><%= recipe.userID %></p>
+                            <a href="/edit/<%=recipe._id%>" class="btn btn-light">Edit Recipe</a>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
