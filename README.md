@@ -16,9 +16,7 @@ The user can add/edit his or her own recipes, search based on ingredients and vi
 
 # Assumptions #
 
-No assumptions have been made while developing this website. 
-
-However, it would look best if a user uploaded an image for each recipe
+Only one assumption was made. It is that when a user wants to have multiple recipes or steps, he/she has to provide each one in a new line. Bullet points and numbers will be added automatically
 
 # Extra Information #
 
