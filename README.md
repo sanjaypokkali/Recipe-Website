@@ -1,5 +1,3 @@
-# CodeMonk
-
 # How to run the project #
 
 The recipe website was written using Node.js, MongoDB, Express.js and EJS
